@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+	<link rel="stylesheet" href="style.css" />
+
+	<script src="script.js" type="module" defer></script>
+
+	<title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+	<section id="dashboard" class="dashboard grid">
+		<div class="main-card">
+			<div id="profile-card" class="profile-card">
+				<img id="profile-pic" src="./images/image-jeremy.png" alt="Profile photo" />
+
+				<div class="profile-text">
+					<p class="small">Report for</p>
+					<h1 id="username">Jeremy Robson</h1>
+				</div>
+			</div>
+			<div class="toggle-time-box">
+				<span id="toggle-daily" class="toggle-time">Daily</span>
+				<span id="toggle-weekly" class="toggle-time active">Weekly</span>
+				<span id="toggle-monthly" class="toggle-time">Monthly</span>
+			</div>
+		</div>
+
+		<div class="card-bg work-card" id="work-card">
+			<div class="card-main work-main">
+				<h2 class="card-title">
+					Work
+					<img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+				</h2>
+				<div class="time-data">
+					<h3 class="timeframe">
+						<span id="work-time" title="Work"></span>hrs
+					</h3>
+					<p id="previous-week" class="small">
+						<span id="previous-timeframe">Last week</span> - <span id="previous-time"></span>hrs
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-bg play-card" id="play-card">
+			<div class="card-main play-main">
+				<h2 class="card-title">
+					Play
+					<img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+				</h2>
+
+				<div class="time-data">
+					<h3 class="timeframe">
+						<span id="play-time" title="Play"></span>hrs
+					</h3>
+					<p id="previous-week" class="small">
+						<span id="previous-timeframe">Last week</span> - <span id="previous-time"></span>hrs
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-bg study-card" id="study-card">
+			<div class="card-main study-main">
+				<h2 class="card-title">
+					Study
+					<img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+				</h2>
+
+				<div class="time-data">
+					<h3 class="timeframe">
+						<span id="study-time" title="Study"></span>hrs
+					</h3>
+					<p id="previous-week" class="small">
+						<span id="previous-timeframe">Last week</span> - <span id="previous-time"></span>hrs
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-bg exercise-card" id="exercise-card">
+			<div class="card-main exercise-main">
+				<h2 class="card-title">
+					Exercise
+					<img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+				</h2>
+
+				<div class="time-data">
+					<h3 class="timeframe">
+						<span id="exercise-time" title="Exercise"></span>hrs
+					</h3>
+					<p id="previous-week" class="small">
+						<span id="previous-timeframe">Last week</span> - <span id="previous-time"></span>hrs
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-bg social-card" id="social-card">
+			<div class="card-main social-main">
+				<h2 class="card-title">
+					Social
+					<img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+				</h2>
+
+				<div class="time-data">
+					<h3 class="timeframe">
+						<span id="social-time" title="Social"></span>hrs
+					</h3>
+					<p id="previous-week" class="small">
+						<span id="previous-timeframe">Last week</span> - <span id="previous-time"></span>hrs
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-bg self-care-card" id="self-care-card">
+			<div class="card-main self-care-main">
+				<h2 class="card-title">
+					Self Care
+					<img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
+				</h2>
+
+				<div class="time-data">
+					<h3 class="timeframe">
+						<span id="self-care-time" title="Self Care"></span>hrs
+					</h3>
+					<p id="previous-week" class="small">
+						<span id="previous-timeframe">Last week</span> - <span id="previous-time"></span>hrs
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="attribution">
+		Challenge by
+		<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+			href="https://www.github.com/stanmancer" target="_blank">Stanmancer</a>.
+	</div>
+</body>
+
+</html>
